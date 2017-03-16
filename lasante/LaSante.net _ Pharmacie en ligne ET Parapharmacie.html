@@ -1,0 +1,811 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0020)https://lasante.net/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>LaSante.net : Pharmacie en ligne ET Parapharmacie</title>
+<meta name="description" content="1ère pharmacie en ligne française, proposant  vente en ligne de médicaments et de produits de parapharmacie"><script async="" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/analytics.js.téléchargement"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta http-equiv="content-language" content="fr">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" type="image/vnd.microsoft.icon" href="https://media.lasante.net/img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="https://media.lasante.net/img/favicon.ico">
+
+	<link rel="author" href="https://plus.google.com/105185615133235198524">
+
+<script type="text/javascript">
+var baseDir = 'https://lasante.net/';
+var customeShopUrl = 'https://lasante.net/';
+var static_token = '1b655190893f51353f715f4396e01634';
+var token = '9046ae5b20d190784ee61e2046755279';
+var priceDisplayPrecision = 2;
+var priceDisplayMethod = 0;
+var roundMode = 2;
+var currentpage = 'index';
+</script>
+
+<script type="text/javascript" async="" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/3331ecab56de38ba9be89c34f32877e7_v352.js.téléchargement"></script>
+<link rel="image_src" href="https://lasante.net/Lasante-logo.png">	<meta property="og:title" content="LaSante.net">
+	<meta property="og:description" content="Prenez votre Santé en main">
+	<meta property="og:type" content="company">
+	<meta property="og:url" content="https://lasante.net/">
+	<meta property="og:image" content="https://lasante.net/themes/default/images/logo_ls.png">
+	<meta property="og:site_name" content="LaSante.net ">
+	<meta property="fb:admins" content="669803372">
+
+<link rel="alternate" type="application/rss+xml" title="LaSante.net : Pharmacie en ligne ET Parapharmacie" href="https://lasante.net/modules/feeder/rss.php?id_category=0&amp;orderby=name&amp;orderway=desc"><script type="text/javascript">
+        
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    
+
+    ga('create', 'UA-521645-1');
+
+        ga('send', 'pageview');
+    
+        </script>
+<!--[if lt IE 10]><link rel="stylesheet" type="text/css" href="https://lasante.net/themes/default/css/ie.css" /><![endif]-->
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="https://lasante.net/themes/default/css/ie7.css" /><![endif]-->
+<!-- <link rel="stylesheet" type="text/css" href="https://lasante.net/themes/default/css/global-flex.css" /> -->
+
+<style id="style_small_css">
+	@charset "utf-8";.header .activetop {background:#94c404;width:100%;z-index:888}.header .headerbody {padding-top:10px}.header .headerbody .wrapper {position:relative}.header .headerbody .logo {margin:0 auto;width:300px;}.header .headerbody .logo a {display:block;background:url('/themes/default/images/logo.png') no-repeat 0 0;width:311px;height:84px;display:block;text-indent:-10000px}.header .headerbody .headertext{display:none}.top_phone {display:none}.cartright {display:none}.homeaddblock a img {display:none}body .main .navigation {display:none;}body .main .submenublock {display:none;}body .main .footerblock {display:none;}body .main #center_column {display:none;}body .main .wrapper .footerbottom {display:none;}body .main .wrapper .darkblue {display:none;}div.hidden {display:none;}#main_title_category {position:absolute;top:1000px;}#main_description_category {position:absolute;top:1000px;}#main_title_product {position:absolute;top:1000px;}#main_description_product {position:absolute;top:1000px;}</style>
+
+<!-- LaSante Google Tag Event tracker variable -->
+<script>
+    var ls_tracker = [];
+</script>
+
+<style type="text/css"></style></head>
+<link rel="stylesheet" href="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/d6b41b3220125d47d6e2419963e45591_all_v392.css" media="all"><body id="index" class="shop ">
+
+				<div class="main">
+            <style>
+                .main .errormsg .wrapper { font-size: 18px }
+            </style>
+			<div class="errormsg">
+				<div>
+					
+					
+					 
+															</div>
+			</div>
+			<div class="header">
+				<div class="" id="tophead-holder"></div>
+				<div class="headertop" id="tophead"></div>
+				<div class="headerbody">
+					<div class="wrapper">
+
+                        
+						<div class="logo"><a href="https://lasante.net/">Lasanté.net : Pharmacie en ligne française</a></div>
+						<div class="headertext">
+							<p id="box2">Pharmacie <strong>en ligne</strong> française</p>
+						</div>
+						<div class="top_phone">
+                            <a href="https://lasante.net/informations/localisation.htm" style="text-decoration: none;">
+                                <h3>Pharmacie du Bizet</h3>
+								<p class="text1">Villeneuve d'Ascq (59)<br>contact<span style="font: bold 12px Arial;">@</span>lasante.net</p>
+                                <p class="text2">09 72 41 40 91</p>
+                            </a>
+							<p class="time">Du lundi au vendredi : 9h00-13h00 / 14h00-18h30</p>
+						</div>
+						
+	<div id="cart-top" class="cartnotload cartright">		
+		<div class="cart1"></div>
+		<div class="cartbody">
+			<div class="cart_block1">
+			<div class="mycartblock">
+				<p class="mycart">
+				<a href="javascript:void(0);">
+				Mon panier</a></p>
+				
+				<img id="top-cart-loading" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/ajax-loader.gif" alt="">
+				
+				<p class="empty">Vide</p>
+							</div>
+			</div>
+		</div>
+		<div class="cartbottom">
+			<div class="links">
+								<a href="https://lasante.net/mon-compte">Inscrivez-vous</a> <span>|</span><a href="https://lasante.net/mon-compte">Connexion</a>
+							</div>
+		</div>
+	</div>
+	<input type="hidden" name="custome_top_cart_number" id="custome_top_cart_number" value="0">
+
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+						<div class="navigation">
+	<div class="wrapper">
+		<ul>
+			<li class="bluelight addicon link_block"><h2 class="link width190"><a href="https://lasante.net/nos-medicaments/">Médicament</a></h2></li>
+			<li class="green dropicon link_block">
+				<table>
+					<tbody><tr>
+						<td>
+							<div class="nav_drop nav_drop1">
+					<h2 class="link width190 dropdown customeover"><a href="https://lasante.net/espace-para/">Parapharmacie</a></h2>
+					<!--div class="dropboxblock parapharmacie submenu"-->
+						<div class="menuitemsclass" id="submenuItems" width="988" height="331"></div>
+						<!--iframe src="https://lasante.net/top-menu-iframe" width="988" height="331" frameborder="0" scrolling="no"></iframe-->
+						
+					<!--/div-->
+				</div>
+						</td>
+						<td>
+							<div class="nav_drop nav_drop2">
+								<a href="https://lasante.net/nos-marques" class="link border dropdown1"><strong class="small">Marques</strong><sup class="arrow">A-Z</sup></a>
+								<div class="smalldropbox marques submenu">
+									<div class="boxtop">
+										<span>Les plus consultées</span>
+									</div>
+									<div class="boxbody">
+									   <ul>
+										<li><a href="https://lasante.net/nos-marques/avene.html">Avène</a></li><li><a href="https://lasante.net/nos-marques/bioderma.html">Bioderma</a></li><li><a href="https://lasante.net/nos-marques/clement-thionville.html">Clément-thionville</a></li><li><a href="https://lasante.net/nos-marques/juvaflorine.html">Juvaflorine</a></li><li><a href="https://lasante.net/nos-marques/juvamine.html">Juvamine</a></li><li><a href="https://lasante.net/nos-marques/la-roche-posay.html">La roche posay</a></li><li><a href="https://lasante.net/nos-marques/mercurochrome.html">Mercurochrome</a></li><li><a href="https://lasante.net/nos-marques/mustela.html">Mustela</a></li><li><a href="https://lasante.net/nos-marques/nuxe.html">Nuxe</a></li><li><a href="https://lasante.net/nos-marques/roge-cavailles.html">Rogé cavaillès</a></li>										</ul>										<p class="linkbottom">
+											<a href="https://lasante.net/nos-marques" class="link-1">Voir toutes les marques</a>
+										</p>
+									</div>
+									<div class="boxbottom"></div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<a href="https://lasante.net/espace-para/promotions/" class="link border maroon"><strong class="small">Promos</strong><sup>-10%-20%-30%</sup></a>
+						</td>
+					</tr>
+				</tbody></table>
+			</li>
+			<li class="Conseils link_block">
+				<a href="https://lasante.net/fiches-conseil/" class="link width80"><strong class="small">Conseils</strong><em></em></a>
+			</li>
+			<li class="communityicon link_block">
+				<a href="https://questions.lasante.net/" class="link width90"><strong class="small">Questions<br>Réponses</strong><em></em></a>
+			</li>
+			<li class="searchbox link_block">
+				<form method="get" action="https://lasante.net/recherche" id="searchbox">
+	<label for="search_query_top">Rechercher</label>
+
+	<input type="hidden" name="controller" value="search">
+	<input type="hidden" name="orderby" value="position">
+	<input type="hidden" name="orderway" value="desc">
+
+	<input class="searchfield" type="text" id="search_query_top" name="search_query" value="">
+	<input class="searchfield_submit" type="submit" id="search_submit_top" value=" ">
+
+</form>
+
+
+
+
+<!-- /Block search module TOP -->
+
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</div>			
+<div class="submenublock">
+				
+				
+</div>
+			<div id="center_column" class=" grid_5">
+	<div class="container">
+	<div class="wrapper">
+		<div class="topblock">
+			<table class="homecolumns">
+				<tbody><tr>
+					<td class="left_column">
+						<div class="leftblock">
+							<h1><span>Médicaments</span> sans ordonnance</h1>
+							<div class="illustration" id="chromemenu">
+								<ul class="links left">						
+									<li>
+													<a href="https://lasante.net/nos-medicaments/douleurs-et-fievres/" rel="drop_5" class="arrow body_head ">
+														<span>Douleurs et fièvres</span>
+													</a>
+												</li>
+												<div id="drop_5" class="dropmenudiv"><p><a href="https://lasante.net/nos-medicaments/douleurs-et-fievres/paracetamol/">Paracétamol</a></p><p><a href="https://lasante.net/nos-medicaments/douleurs-et-fievres/ibuprofene/">Ibuprofène</a></p><p><a href="https://lasante.net/nos-medicaments/douleurs-et-fievres/aspirine/">Aspirine</a></p></div>																																															<li>
+													<a href="https://lasante.net/nos-medicaments/forme-et-vitalite/" rel="drop_12" class="arrow body_head ">
+														<span>Forme et vitalité</span>
+													</a>
+												</li>
+												<div id="drop_12" class="dropmenudiv"><p><a href="https://lasante.net/nos-medicaments/forme-et-vitalite/fatigue-et-baisse-de-tonus/">Fatigue et baisse de tonus</a></p><p><a href="https://lasante.net/nos-medicaments/forme-et-vitalite/stress/">Stress</a></p><p><a href="https://lasante.net/nos-medicaments/forme-et-vitalite/troubles-du-sommeil/">Troubles du sommeil</a></p><p><a href="https://lasante.net/nos-medicaments/forme-et-vitalite/chute-des-cheveux/">Chute des cheveux</a></p><p><a href="https://lasante.net/nos-medicaments/forme-et-vitalite/surpoids/">Surpoids</a></p><p><a href="https://lasante.net/nos-medicaments/forme-et-vitalite/medicaments-complements-alimentaires/">Compléments alimentaires</a></p><p><a href="https://lasante.net/nos-medicaments/forme-et-vitalite/m%C3%A9dicaments-sexualit%C3%A9/">Médicaments Sexualité</a></p><p><a href="https://lasante.net/nos-medicaments/forme-et-vitalite/contraception-m%C3%A9nopause/">Contraception - Ménopause</a></p></div>																				<li>
+													<a href="https://lasante.net/nos-medicaments/maux-de-gorge-et-toux/" rel="drop_8" class="arrow body_chest ">
+														<span>Maux de gorge et toux</span>
+													</a>
+												</li>
+												<div id="drop_8" class="dropmenudiv"><p><a href="https://lasante.net/nos-medicaments/maux-de-gorge-et-toux/maux-de-gorge/">Maux de gorge</a></p><p><a href="https://lasante.net/nos-medicaments/maux-de-gorge-et-toux/toux/">Toux</a></p></div>																				<li>
+													<a href="https://lasante.net/nos-medicaments/etat-grippal/" class=" body_head  body_chest ">
+														<span>Etat grippal</span>
+													</a>
+												</li>
+																																																		<li>
+													<a href="https://lasante.net/nos-medicaments/sevrage-tabagique/" class=" body_head ">
+														<span>Sevrage tabagique</span>
+													</a>
+												</li>
+																																<li>
+													<a href="https://lasante.net/nos-medicaments/muscles-et-articulations/" rel="drop_16" class="arrow body_foot body_thigh body_forearm ">
+														<span>Muscles et articulations</span>
+													</a>
+												</li>
+												<div id="drop_16" class="dropmenudiv"><p><a href="https://lasante.net/nos-medicaments/muscles-et-articulations/douleurs-articulaires/">Douleurs articulaires</a></p><p><a href="https://lasante.net/nos-medicaments/muscles-et-articulations/douleurs-musculaires/">Douleurs musculaires</a></p></div>																													<li>
+													<a href="https://lasante.net/nos-medicaments/medicaments-premiers-soins/" rel="drop_53" class="arrow body_forearm body_foot body_thigh ">
+														<span>Premiers soins</span>
+													</a>
+												</li>
+												<div id="drop_53" class="dropmenudiv"><p><a href="https://lasante.net/nos-medicaments/medicaments-premiers-soins/bleus-coups-bosses/">Bleus, coups, bosses</a></p><p><a href="https://lasante.net/nos-medicaments/medicaments-premiers-soins/brulures/">Brûlures</a></p><p><a href="https://lasante.net/nos-medicaments/medicaments-premiers-soins/piqures-d-insectes/">Piqûres d'insectes</a></p><p><a href="https://lasante.net/nos-medicaments/medicaments-premiers-soins/antiseptiques/">Antiseptiques</a></p></div>																																					</ul>
+								<div class="imageblock">
+									<div class="bggraphics none">
+										<span class="circle link1"><div><a href="https://lasante.net/nos-medicaments/douleurs-et-fievres/">Douleurs et fièvres</a></div></span>
+										<span class="circle link2"><div><a href="https://lasante.net/nos-medicaments/maux-de-gorge-et-toux/">Maux de gorge et toux</a></div></span>
+										<span class="circle link3"><div><a href="https://lasante.net/nos-medicaments/digestion-et-nausees/">Digestion et nausées</a></div></span>
+										<span class="circle link4"><div><a href="https://lasante.net/nos-medicaments/muscles-et-articulations/">Muscles et articulations</a></div></span>
+										<span class="circle link5"><div><a href="https://lasante.net/nos-medicaments/muscles-et-articulations/">Muscles et articulations</a></div></span>
+										<span class="circle link6"><div><a href="https://lasante.net/nos-medicaments/muscles-et-articulations/">Muscles et articulations</a></div></span>
+										<span class="circle link7"><div><a href="https://lasante.net/nos-medicaments/medicaments-bebe/">Bébé</a></div></span>
+									</div>
+								</div>					
+								<ul class="links right">											<li><a href="https://lasante.net/nos-medicaments/yeux/" rel="drop_15" class="arrow body_head"><span>Yeux</span></a></li><div id="drop_15" class="dropmenudiv"><p><a href="https://lasante.net/nos-medicaments/yeux/troubles-de-la-vue/">Troubles de la vue</a></p><p><a href="https://lasante.net/nos-medicaments/yeux/irritations/">Irritations</a></p></div><li><a href="https://lasante.net/nos-medicaments/nez-et-oreilles/" rel="drop_14" class="arrow body_head"><span>Nez et oreilles</span></a></li><div id="drop_14" class="dropmenudiv"><p><a href="https://lasante.net/nos-medicaments/nez-et-oreilles/rhume/">Rhume</a></p><p><a href="https://lasante.net/nos-medicaments/nez-et-oreilles/rhinite-allergique/">Rhinite allergique</a></p><p><a href="https://lasante.net/nos-medicaments/nez-et-oreilles/lavage-orl/">Lavage ORL</a></p></div><li><a href="https://lasante.net/nos-medicaments/maux-de-bouche/" rel="drop_9" class="arrow body_head"><span>Maux de bouche</span></a></li><div id="drop_9" class="dropmenudiv"><p><a href="https://lasante.net/nos-medicaments/maux-de-bouche/prevention-des-caries/">Prévention des caries</a></p><p><a href="https://lasante.net/nos-medicaments/maux-de-bouche/inflammation-des-gencives/">Inflammation des gencives</a></p><p><a href="https://lasante.net/nos-medicaments/maux-de-bouche/aphtes/">Aphtes</a></p><p><a href="https://lasante.net/nos-medicaments/maux-de-bouche/bouton-de-fievre/">Bouton de fièvre</a></p></div><li><a href="https://lasante.net/nos-medicaments/digestion-et-nausees/" rel="drop_6" class="arrow body_abdomen"><span>Digestion et nausées</span></a></li><div id="drop_6" class="dropmenudiv"><p><a href="https://lasante.net/nos-medicaments/digestion-et-nausees/digestion-difficile/">Digestion difficile</a></p><p><a href="https://lasante.net/nos-medicaments/digestion-et-nausees/maux-d-estomac/">Maux d'estomac</a></p><p><a href="https://lasante.net/nos-medicaments/digestion-et-nausees/ballonnements/">Ballonnements</a></p><p><a href="https://lasante.net/nos-medicaments/digestion-et-nausees/constipation/">Constipation</a></p><p><a href="https://lasante.net/nos-medicaments/digestion-et-nausees/diarrhee/">Diarrhée</a></p><p><a href="https://lasante.net/nos-medicaments/digestion-et-nausees/nausees/">Nausées</a></p></div><li><a href="https://lasante.net/nos-medicaments/irritations-et-infections/" rel="drop_294" class="arrow body_forearm body_thigh"><span>Irritations et infections</span></a></li><div id="drop_294" class="dropmenudiv"><p><a href="https://lasante.net/nos-medicaments/irritations-et-infections/verrues/">Verrues</a></p><p><a href="https://lasante.net/nos-medicaments/irritations-et-infections/mycoses/">Mycoses</a></p><p><a href="https://lasante.net/nos-medicaments/irritations-et-infections/irritations-cutanees/">Irritations cutanées</a></p><p><a href="https://lasante.net/nos-medicaments/irritations-et-infections/troubles-urinaires/">Troubles urinaires</a></p></div><li><a href="https://lasante.net/nos-medicaments/troubles-veineux/" rel="drop_17" class="arrow body_thigh"><span>Troubles veineux</span></a></li><div id="drop_17" class="dropmenudiv"><p><a href="https://lasante.net/nos-medicaments/troubles-veineux/hemorroides-et-jambes-lourdes/">Hémorroïdes et jambes lourdes</a></p><p><a href="https://lasante.net/nos-medicaments/troubles-veineux/saignements/">Saignements</a></p></div><li><a href="https://lasante.net/nos-medicaments/medicaments-bebe/" rel="drop_11" class="arrow body_baby"><span>Bébé</span></a></li><div id="drop_11" class="dropmenudiv"><p><a href="https://lasante.net/nos-medicaments/medicaments-bebe/douleurs-et-fievre/">Douleurs et fièvre</a></p><p><a href="https://lasante.net/nos-medicaments/medicaments-bebe/bronchite/">Bronchite</a></p><p><a href="https://lasante.net/nos-medicaments/medicaments-bebe/douleurs-dentaires/">Douleurs dentaires</a></p><p><a href="https://lasante.net/nos-medicaments/medicaments-bebe/erytheme-fessier/">Erythème fessier</a></p><p><a href="https://lasante.net/nos-medicaments/medicaments-bebe/vitamines/">Vitamines</a></p></div></ul>
+								<div class="clear"></div>
+								<div class="illust-bottom">
+									<div class="block">
+										<label>Médecines douces</label>
+										<a href="https://lasante.net/nos-medicaments/medecine-homeopathie" class="bluebtn">Homéopathie</a>
+										<a href="https://lasante.net/nos-medicaments/medecine-phytotherapie" class="bluebtn">Phytothérapie</a>
+										<a href="https://lasante.net/nos-medicaments/medecine-oligotherapie" class="bluebtn">Oligothérapie</a>
+										<a href="https://lasante.net/espace-para/medecine-aromatherapie" class="bluebtn lastbtn">Aromathérapie</a>				
+									</div>
+									<div class="block last">
+										<label for="redirect_feature_url">Les médicaments par maladie</label>
+										<select class="combobox " name="redirect_feature_url" id="redirect_feature_url" onchange="redirectFeatureUrl();">	
+										<option value="">Choisir</option>
+										<option value="https://lasante.net/nos-medicaments/soigner-allergie">Allergie</option><option value="https://lasante.net/nos-medicaments/soigner-angine">Angine</option><option value="https://lasante.net/nos-medicaments/soigner-bronchite">Bronchite</option><option value="https://lasante.net/nos-medicaments/soigner-carence_en_potassium">Carence en potassium</option><option value="https://lasante.net/nos-medicaments/soigner-conjonctivite">Conjonctivite</option><option value="https://lasante.net/nos-medicaments/soigner-constipation">Constipation</option><option value="https://lasante.net/nos-medicaments/soigner-diarrhees_aigues_passageres">Diarrhées aigues passagères</option><option value="https://lasante.net/nos-medicaments/soigner-dyslexie">Dyslexie</option><option value="https://lasante.net/nos-medicaments/soigner-elongation">Elongation</option><option value="https://lasante.net/nos-medicaments/soigner-entorse">Entorse</option><option value="https://lasante.net/nos-medicaments/soigner-gastro_enterite">Gastro-entérite</option><option value="https://lasante.net/nos-medicaments/soigner-grippe">Grippe</option><option value="https://lasante.net/nos-medicaments/soigner-hemorroides">Hémorroïdes</option><option value="https://lasante.net/nos-medicaments/soigner-jambes_lourdes">Jambes lourdes</option><option value="https://lasante.net/nos-medicaments/soigner-mal_des_transports">Mal des transports</option><option value="https://lasante.net/nos-medicaments/soigner-maux_de_gorge">Maux de gorge</option><option value="https://lasante.net/nos-medicaments/soigner-nausees">Nausées</option><option value="https://lasante.net/nos-medicaments/soigner-otite">Otite</option><option value="https://lasante.net/nos-medicaments/soigner-problemes_cardiaques">Problèmes cardiaques</option><option value="https://lasante.net/nos-medicaments/soigner-rhinite_allergique">Rhinite allergique</option><option value="https://lasante.net/nos-medicaments/soigner-rhinopharyngite">Rhinopharyngite</option><option value="https://lasante.net/nos-medicaments/soigner-rhume">Rhume</option><option value="https://lasante.net/nos-medicaments/soigner-rhumerhinopharyngite">Rhume,Rhinopharyngite</option><option value="https://lasante.net/nos-medicaments/soigner-stress">Stress</option><option value="https://lasante.net/nos-medicaments/soigner-toux">Toux</option><option value="https://lasante.net/nos-medicaments/soigner-tracheite">Trachéïte</option><option value="https://lasante.net/nos-medicaments/soigner-troubles_du_sommeil">Troubles du sommeil</option><option value="https://lasante.net/nos-medicaments/soigner-ulcere">Ulcère</option>										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td class="right_column">
+						<div class="rightblock">
+							<div class="slider_boxes" id="hide_load_doc">
+
+                                                                     
+                                                                            
+                                         
+                                            <a href="https://blog.lasante.net/">
+                                                <div class="box3 animation box largebox">
+                                                    <div class="text"></div> 
+                                                    <div class="imageblock">
+                                                        <img src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/645365-27.jpg">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                                                                                                    
+                                         
+                                            <a href="https://lasante.net/espace-para/bien-etre-et-minceur/bien-etre-complements-alimentaires/sommeil-stress/mag-2-sommeil-comprimes-x-30.html">
+                                                <div class="box3 animation box largebox">
+                                                    <div class="text"></div> 
+                                                    <div class="imageblock">
+                                                        <img src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/400298-104.jpg">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                                                                                            
+							</div>
+							<ul id="slider3">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                                                                        
+                                    																					 
+												<li class="slide1 block1 active slider_boxes">
+													<a href="https://blog.lasante.net/" onclick="return pushClickBanner(&#39;27-28&#39;, &#39;Actu santé&#39;, &#39;645365-27.jpg&#39;, &#39;carrousels&#39;);">
+														<div class="box3 animation box largebox">
+															<div class="text"></div> 
+															<div class="imageblock">
+																<img src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/645365-27.jpg">
+															</div>
+														</div>
+													</a>
+
+
+													
+													<script>
+														ls_tracker.push({
+															'bid': 'LS_27-28',
+															'ecommerce': {
+																'promoView': {
+																	'promotions': [
+																		{
+																			'id': 'LS_27-28',
+																			'name': 'Actu santé',
+																			'creative': '645365-27.jpg',
+																			'position': 'carrousels'
+																		}
+																	]
+																}
+															}
+														});
+													</script>
+												</li>
+																																 
+												<li class="slide1 block1 active slider_boxes">
+													<a href="https://lasante.net/espace-para/bien-etre-et-minceur/bien-etre-complements-alimentaires/sommeil-stress/mag-2-sommeil-comprimes-x-30.html" onclick="return pushClickBanner(&#39;104-107&#39;, &#39;Mag2&#39;, &#39;400298-104.jpg&#39;, &#39;carrousels&#39;);">
+														<div class="box3 animation box largebox">
+															<div class="text"></div> 
+															<div class="imageblock">
+																<img src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/400298-104.jpg">
+															</div>
+														</div>
+													</a>
+
+
+													
+													<script>
+														ls_tracker.push({
+															'bid': 'LS_104-107',
+															'ecommerce': {
+																'promoView': {
+																	'promotions': [
+																		{
+																			'id': 'LS_104-107',
+																			'name': 'Mag2',
+																			'creative': '400298-104.jpg',
+																			'position': 'carrousels'
+																		}
+																	]
+																}
+															}
+														});
+													</script>
+												</li>
+																					                                    																
+							</ul>
+
+						
+						
+							
+														<div id="slides2">
+								<div class="slides_container">
+								
+								
+								
+									<div>
+									<div class="greenbox">
+										<h3><a href="https://lasante.net/fiches-conseil/infos-pratiques/pharmacie-en-ligne/" title="Pourquoi acheter des médicaments sur internet ?">Le conseil du pharmacien</a></h3>
+										<div class="boxcontent">
+											<div class="imageblock">
+												<p class="htc">	
+													<img alt="Pourquoi acheter des médicaments sur internet" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/50-cms_home.jpg">
+												</p>
+											</div>
+											<div class="contentblock">				
+												<p class="text">
+													<a href="https://lasante.net/fiches-conseil/infos-pratiques/pharmacie-en-ligne/pourquoi-acheter-medicaments-internet.htm">Pourquoi acheter des médicaments sur internet ?</a>
+												</p>
+												<p class="link">
+													<a href="https://lasante.net/fiches-conseil/infos-pratiques/pharmacie-en-ligne/">Voir plus de conseils</a>
+												</p>
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+									</div>
+									
+									<div>
+									<div class="greenbox">
+										<h3><a href="https://lasante.net/fiches-conseil/infos-pratiques/pharmacie-en-ligne/" title="Précautions à prendre pour acheter des médicaments en ligne">Le conseil du pharmacien</a></h3>
+										<div class="boxcontent">
+											<div class="imageblock">
+												<p class="htc">	
+													<img alt="Précautions à prendre pour acheter des médicaments en ligne" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/52-cms_home.jpg">
+												</p>
+											</div>
+											<div class="contentblock">				
+												<p class="text">
+													<a href="https://lasante.net/fiches-conseil/infos-pratiques/pharmacie-en-ligne/precautions-acheter-medicaments-ligne.htm">Précautions à prendre pour acheter des médicaments en ligne</a>
+												</p>
+												<p class="link">
+													<a href="https://lasante.net/fiches-conseil/infos-pratiques/pharmacie-en-ligne/">Voir plus de conseils</a>
+												</p>
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+									</div>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+																		<div>
+									<div class="greenbox">
+										<h3><a href="https://lasante.net/fiches-conseil/automedication/problemes-peau/" title="Ampoules">Le conseil du pharmacien</a></h3>
+										<div class="boxcontent">
+											<div class="imageblock">
+												<p class="htc">	
+													<img alt="Ampoules" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/89-cms_home.jpg">
+												</p>
+											</div>
+											<div class="contentblock">				
+												<p class="text">
+													<a href="https://lasante.net/fiches-conseil/automedication/problemes-peau/ampoules.htm">Comment guérir et éviter les ampoules ?</a>
+												</p>
+												<p class="link">
+													<a href="https://lasante.net/fiches-conseil/automedication/problemes-peau/">Voir plus de conseils</a>
+												</p>
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+									</div>
+																		<div>
+									<div class="greenbox">
+										<h3><a href="https://lasante.net/fiches-conseil/bien-etre/soins-cosmetiques/" title="Crème, fluide, baume… Que choisir ?">Le conseil du pharmacien</a></h3>
+										<div class="boxcontent">
+											<div class="imageblock">
+												<p class="htc">	
+													<img alt="Crème, fluide, baume… Que choisir ?" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/120-cms_home.jpg">
+												</p>
+											</div>
+											<div class="contentblock">				
+												<p class="text">
+													<a href="https://lasante.net/fiches-conseil/bien-etre/soins-cosmetiques/choisir-creme-type-peau-seche-mixte-grasse.htm">Crème, fluide, baume : choisir le bon produit en fonction de son type de peau</a>
+												</p>
+												<p class="link">
+													<a href="https://lasante.net/fiches-conseil/bien-etre/soins-cosmetiques/">Voir plus de conseils</a>
+												</p>
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+									</div>
+																		<div>
+									<div class="greenbox">
+										<h3><a href="https://lasante.net/fiches-conseil/automedication/maux-de-bouche-et-de-gorge/" title="Ronflements">Le conseil du pharmacien</a></h3>
+										<div class="boxcontent">
+											<div class="imageblock">
+												<p class="htc">	
+													<img alt="Ronflements" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/134-cms_home.jpg">
+												</p>
+											</div>
+											<div class="contentblock">				
+												<p class="text">
+													<a href="https://lasante.net/fiches-conseil/automedication/maux-de-bouche-et-de-gorge/ronflements.htm">En finir avec les ronflements</a>
+												</p>
+												<p class="link">
+													<a href="https://lasante.net/fiches-conseil/automedication/maux-de-bouche-et-de-gorge/">Voir plus de conseils</a>
+												</p>
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+									</div>
+																	</div>
+							</div>
+						   								
+						</div>
+					</td>
+				</tr>
+			</tbody></table>
+			<div class="clear"></div>
+		</div>
+				<div class="bluebox">
+			<h3>Médicaments <span>de saison</span></h3>
+			<div class="prducts">
+				<div class="productlists">
+				<ul id="product_list">																														<li class=" ">
+						<div class="product">							<div class="productimage">
+								<a href="https://lasante.net/nos-medicaments/medicaments-bebe/douleurs-dentaires/camilia-x-10.html"><img alt="Camilia x 10" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/camilia-x-10.jpg" class="ajax_add_to_cart_animate_object" rel="ajax_id_product_339"></a>
+							</div>
+							<div class="p-contents">
+								<h3 class="p-name"><a href="https://lasante.net/nos-medicaments/medicaments-bebe/douleurs-dentaires/camilia-x-10.html" title="Camilia x 10">Camilia x 10</a></h3>
+								<p class="text"></p>
+							</div>
+							
+														
+														<form id="buy_block" class="ajax_add_to_cart_animate_form" action="https://lasante.net/panier" method="post">
+							<input type="hidden" name="token" value="1b655190893f51353f715f4396e01634">
+							<input type="hidden" name="id_product" value="339" id="product_page_product_id">
+							<input type="hidden" name="data-id-product" value="339" id="data-id-product">						
+							<input type="hidden" name="add" value="1">
+							<input type="hidden" name="id_product_attribute" id="idCombination" value="">
+							
+															<div class="productadd productadd_seemore">
+								<a href="https://lasante.net/nos-medicaments/medicaments-bebe/douleurs-dentaires/camilia-x-10.html" class="htc exclusive addtocart btn"><span>Voir plus</span></a>
+								<br class="clear">
+							</div>
+																			
+							</form>
+							</div>
+					</li>																														<li class=" ">
+						<div class="product">							<div class="productimage">
+								<a href="https://lasante.net/nos-medicaments/muscles-et-articulations/douleurs-musculaires/flector-tissugel-ep-1-x-5.html"><img alt="Flector Tissugel EP 1 % x 5" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/flector-tissugel-ep-1-x-5.jpg" class="ajax_add_to_cart_animate_object" rel="ajax_id_product_407"></a>
+							</div>
+							<div class="p-contents">
+								<h3 class="p-name"><a href="https://lasante.net/nos-medicaments/muscles-et-articulations/douleurs-musculaires/flector-tissugel-ep-1-x-5.html" title="Flector Tissugel EP 1 % x 5">Flector Tissugel EP 1 % x 5</a></h3>
+								<p class="text"></p>
+							</div>
+							
+														
+														<form id="buy_block" class="ajax_add_to_cart_animate_form" action="https://lasante.net/panier" method="post">
+							<input type="hidden" name="token" value="1b655190893f51353f715f4396e01634">
+							<input type="hidden" name="id_product" value="407" id="product_page_product_id">
+							<input type="hidden" name="data-id-product" value="407" id="data-id-product">						
+							<input type="hidden" name="add" value="1">
+							<input type="hidden" name="id_product_attribute" id="idCombination" value="">
+							
+															<div class="productadd productadd_seemore">
+								<a href="https://lasante.net/nos-medicaments/muscles-et-articulations/douleurs-musculaires/flector-tissugel-ep-1-x-5.html" class="htc exclusive addtocart btn"><span>Voir plus</span></a>
+								<br class="clear">
+							</div>
+																			
+							</form>
+							</div>
+					</li>																														<li class=" ">
+						<div class="product">							<div class="productimage">
+								<a href="https://lasante.net/nos-medicaments/irritations-et-infections/irritations-cutanees/dexeryl-250-g.html"><img alt="Dexeryl 250 g" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/dexeryl-250-g.jpg" class="ajax_add_to_cart_animate_object" rel="ajax_id_product_2753"></a>
+							</div>
+							<div class="p-contents">
+								<h3 class="p-name"><a href="https://lasante.net/nos-medicaments/irritations-et-infections/irritations-cutanees/dexeryl-250-g.html" title="Dexeryl 250 g">Dexeryl 250 g</a></h3>
+								<p class="text"></p>
+							</div>
+							
+														
+														<form id="buy_block" class="ajax_add_to_cart_animate_form" action="https://lasante.net/panier" method="post">
+							<input type="hidden" name="token" value="1b655190893f51353f715f4396e01634">
+							<input type="hidden" name="id_product" value="2753" id="product_page_product_id">
+							<input type="hidden" name="data-id-product" value="2753" id="data-id-product">						
+							<input type="hidden" name="add" value="1">
+							<input type="hidden" name="id_product_attribute" id="idCombination" value="">
+							
+															<div class="productadd productadd_seemore">
+								<a href="https://lasante.net/nos-medicaments/irritations-et-infections/irritations-cutanees/dexeryl-250-g.html" class="htc exclusive addtocart btn"><span>Voir plus</span></a>
+								<br class="clear">
+							</div>
+																			
+							</form>
+							</div>
+					</li>																														<li class=" ">
+						<div class="product">							<div class="productimage">
+								<a href="https://lasante.net/nos-medicaments/digestion-et-nausees/constipation/microlax-adulte-x-4.html"><img alt="Microlax Adulte x 4" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/microlax-adulte-x-4.jpg" class="ajax_add_to_cart_animate_object" rel="ajax_id_product_387"></a>
+							</div>
+							<div class="p-contents">
+								<h3 class="p-name"><a href="https://lasante.net/nos-medicaments/digestion-et-nausees/constipation/microlax-adulte-x-4.html" title="Microlax Adulte x 4">Microlax Adulte x 4</a></h3>
+								<p class="text"></p>
+							</div>
+							
+														
+														<form id="buy_block" class="ajax_add_to_cart_animate_form" action="https://lasante.net/panier" method="post">
+							<input type="hidden" name="token" value="1b655190893f51353f715f4396e01634">
+							<input type="hidden" name="id_product" value="387" id="product_page_product_id">
+							<input type="hidden" name="data-id-product" value="387" id="data-id-product">						
+							<input type="hidden" name="add" value="1">
+							<input type="hidden" name="id_product_attribute" id="idCombination" value="">
+							
+															<div class="productadd productadd_seemore">
+								<a href="https://lasante.net/nos-medicaments/digestion-et-nausees/constipation/microlax-adulte-x-4.html" class="htc exclusive addtocart btn"><span>Voir plus</span></a>
+								<br class="clear">
+							</div>
+																			
+							</form>
+							</div>
+					</li>																														<li class=" ">
+						<div class="product">							<div class="productimage">
+								<a href="https://lasante.net/nos-medicaments/forme-et-vitalite/troubles-du-sommeil/spasmine-x-30.html"><img alt="Spasmine x 30" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/spasmine-x-30.jpg" class="ajax_add_to_cart_animate_object" rel="ajax_id_product_56"></a>
+							</div>
+							<div class="p-contents">
+								<h3 class="p-name"><a href="https://lasante.net/nos-medicaments/forme-et-vitalite/troubles-du-sommeil/spasmine-x-30.html" title="Spasmine x 30">Spasmine x 30</a></h3>
+								<p class="text"></p>
+							</div>
+							
+														
+														<form id="buy_block" class="ajax_add_to_cart_animate_form" action="https://lasante.net/panier" method="post">
+							<input type="hidden" name="token" value="1b655190893f51353f715f4396e01634">
+							<input type="hidden" name="id_product" value="56" id="product_page_product_id">
+							<input type="hidden" name="data-id-product" value="56" id="data-id-product">						
+							<input type="hidden" name="add" value="1">
+							<input type="hidden" name="id_product_attribute" id="idCombination" value="">
+							
+															<div class="productadd productadd_seemore">
+								<a href="https://lasante.net/nos-medicaments/forme-et-vitalite/troubles-du-sommeil/spasmine-x-30.html" class="htc exclusive addtocart btn"><span>Voir plus</span></a>
+								<br class="clear">
+							</div>
+																			
+							</form>
+							</div>
+					</li>																														<li class="  last">
+						<div class="product">							<div class="productimage">
+								<a href="https://lasante.net/nos-medicaments/nez-et-oreilles/rhinite-allergique/humex-allergie-cetirizine-10-mg-x-7.html"><img alt="Humex Allergie Cétirizine 10 mg x 7" src="./LaSante.net _ Pharmacie en ligne ET Parapharmacie_files/humex-allergie-cetirizine-10-mg-x-7.jpg" class="ajax_add_to_cart_animate_object" rel="ajax_id_product_4837"></a>
+							</div>
+							<div class="p-contents">
+								<h3 class="p-name"><a href="https://lasante.net/nos-medicaments/nez-et-oreilles/rhinite-allergique/humex-allergie-cetirizine-10-mg-x-7.html" title="Humex Allergie Cétirizine 10 mg x 7">Humex Allergie Cétirizine 10 mg x 7</a></h3>
+								<p class="text"></p>
+							</div>
+							
+														
+														<form id="buy_block" class="ajax_add_to_cart_animate_form" action="https://lasante.net/panier" method="post">
+							<input type="hidden" name="token" value="1b655190893f51353f715f4396e01634">
+							<input type="hidden" name="id_product" value="4837" id="product_page_product_id">
+							<input type="hidden" name="data-id-product" value="4837" id="data-id-product">						
+							<input type="hidden" name="add" value="1">
+							<input type="hidden" name="id_product_attribute" id="idCombination" value="">
+							
+															<div class="productadd productadd_seemore">
+								<a href="https://lasante.net/nos-medicaments/nez-et-oreilles/rhinite-allergique/humex-allergie-cetirizine-10-mg-x-7.html" class="htc exclusive addtocart btn"><span>Voir plus</span></a>
+								<br class="clear">
+							</div>
+																			
+							</form>
+							</div>
+					</li><li class="cart-steps-listing position1"><div id="cart-steps-339" class="cart-steps"></div></li><li class="cart-steps-listing position2"><div id="cart-steps-407" class="cart-steps"></div></li><li class="cart-steps-listing position3"><div id="cart-steps-2753" class="cart-steps"></div></li><li class="cart-steps-listing position4"><div id="cart-steps-387" class="cart-steps"></div></li><li class="cart-steps-listing position4"><div id="cart-steps-56" class="cart-steps"></div></li><li class="cart-steps-listing position4 last"><div id="cart-steps-4837" class="cart-steps"></div></li></ul>
+				<div class="clear"></div>
+			</div>
+			</div>
+		</div>
+				<div class="space10"></div>
+	</div>
+</div>
+	
+							</div>
+                <div class="wrapper">
+                    <div class="darkblue">
+                        <h3>Les avantages de la pharmacie en ligne</h3>
+
+
+                        <ul class="icons">
+                            <li class="icon1">
+                                <a href="https://lasante.net/nos-avantages/m%C3%A9dicaments-sans-ordonnance.htm">
+                                    <em></em>
+                                    <span>1000 médicaments sans ordonnance</span>
+                                </a>
+                            </li>
+                            <li class="icon2">
+                                <a href="https://lasante.net/nos-avantages/parapharmacie.htm">
+                                    <em></em>
+                                    <span>300 marques de parapharmacie</span>
+                                </a>
+                            </li>
+                            <li class="icon3">
+                                <a href="https://lasante.net/nos-avantages/un-pharmacien-a-votre-service.htm">
+                                    <em></em>
+                                    <span>Un pharmacien à votre service</span>
+                                </a>
+                            </li>
+                            <li class="icon4">
+                                <a href="https://lasante.net/nos-avantages/origine-des-produits-certifiee.htm">
+                                    <em></em>
+                                    <span>Origine des produits certifiée</span>
+                                </a>
+                            </li>
+                            <li class="icon5">
+                                <a href="https://lasante.net/nos-avantages/livraison-24-48h.htm">
+                                    <em></em>
+                                    <span>Livraison 24/48h</span>
+                                </a>
+                            </li>
+                            <li class="icon6">
+                                <a href="https://lasante.net/nos-avantages/fid%C3%A9lit%C3%A9-parrainage.htm">
+                                    <em></em>
+                                    <span>Fidélité et Parrainage</span>
+                                </a>
+                            </li>
+                            <li class="icon7">
+                                <a href="https://lasante.net/nos-avantages/paiement-s%C3%A9curise.htm">
+                                    <em></em>
+                                    <span>Paiement sécurisé</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="clear"></div>
+                    </div>
+				<div class="footerblock" style="min-height:553px;width:100%"></div>
+                <div class="wrapper">
+                    <div class="footerbottom">
+                        <div class="foot_legal_notice">Page mise à jour le 16/03/2017</div>
+                        <div class="right">
+                            <span>Tous droits réservés</span>   |  <a href="https://lasante.net/informations/conditions-g%C3%A9n%C3%A9rales-de-vente.htm">Conditions générales de ventes</a>   |  <a href="https://lasante.net/informations/mentions-legales.htm">Mentions légales</a>   |  <a href="https://lasante.net/informations/qui-sommes-nous.htm">Qui sommes-nous ?</a>   |  Une création <a target="_blank" href="http://www.toucouleur.fr/" rel="nofollow">Toucouleur.fr</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+				
+
+	
+	<div class="hidden">
+	<a id="phone-contact-link" href="https://lasante.net/#phone-contact" title="Vous souhaitez être recontacté(e) ?">Vous souhaitez être recontacté(e) ?</a>
+	<div id="phone-contact">
+		<form method="post" id="phone-contact-form" class="formfield1">
+			<h4>Vous souhaitez être recontacté(e) ?</h4>
+			<p>
+				<label for="phone_number">Votre numéro : </label>
+				<input type="text" name="phone_number" id="phone_number" class="textbox">
+			</p>
+			<p class="radiofield1">
+				<label>Vous souhaitez être rappelé(e) : </label>
+					<span>
+						<input type="radio" name="phone_time" class="phone_time" id="phone_time0" value="0">
+						<label for="phone_time">Dès que possible</label>
+						
+						<input type="radio" name="phone_time" class="phone_time" id="phone_time1" value="1">
+						<label for="phone_time">Dans le créneau suivant</label>
+						<br class="clear">
+						<input type="text" id="photo_time_text" name="photo_time_text" value="" class="textbox">
+						
+					</span>
+			</p>
+			<p>
+				<label for="phone_message" class="lineheight">Message (facultatif) : </label>
+				<textarea id="phone_message" name="phone_message" class="textarea"></textarea>
+			</p>
+			<div class="submit">
+				<input type="submit" name="submitPhone" class="normalbtn" value="ENVOYER">
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="hidden">
+	<a id="question-contact-link" href="https://lasante.net/#question-contact" title="Posez-nous votre question !">Posez-nous votre question !</a>
+	<div id="question-contact">
+		<form method="post" id="question-contact-form" class="formfield1">
+			<input type="hidden" name="msg_product" value="">
+			<h4>Posez-nous votre question !</h4>
+			<input type="hidden" id="drug_name" name="drug_name" value="">
+			<p>
+				<label for="my_question" class="lineheight lineheighttext">Ma question  : </label>
+				<textarea id="my_question" name="my_question" class="textarea"></textarea>
+			</p>
+			<p class="radiofield1">
+				<label>Mon adresse email : </label>
+					<span>
+					<input type="text" id="email_address" name="email_address" value="" class="textbox">
+					</span>
+			</p>
+
+			<div class="submit">
+				<input type="submit" name="submitQustion" class="normalbtn" value="ENVOYER">
+			</div>
+		</form>
+	</div>
+</div>
+
+
+
+<script>
+    var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+
+                    l.rel = 'stylesheet';l.href = "https://media.lasante.net/themes/default/cache/d6b41b3220125d47d6e2419963e45591_all_v392.css?v=31";l.media = "all";
+        
+        var h = document.getElementsByTagName('body')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('DOMContentLoaded', cb);
+</script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e704754d37","applicationID":"28708725","transactionName":"ZFNbZhQCXBZQUEJdWF0ZbEAPTFsLVVZOGkdbRg==","queueTime":0,"applicationTime":1724,"atts":"SBRYEFwYTxg=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+
+
+</div></div></body></html>
